@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body style="background-color: black;">
+        <h1>Snake Game</h1>
+        <div>
+            <butto onclick="window.location.replace('difficulty.html')">Start</button>
+        </div>
+        <style>
+            @font-face {
+                font-family: Game;
+                src: url(font/gamefont.otf);
+            }
+            button{
+                position:fixed; 
+                left:0; 
+                width: 100%; 
+                height: 10%; 
+                top: 30%;
+                background-color: green;
+                border-radius: 3vw;
+                border-width: 1.3vw;
+                border-color: black;
+                font-family: Game;
+                font-size: 2.3vw;
+                transition: cubic-bezier(.78,.23,.17,1.21) 0.6s;
+                border-style: double;
+                user-select: none;
+            }
+            button:hover{
+                background-color: chartreuse;
+                border-color: aliceblue;
+                border-width: 2vw;
+                height: 20%;
+                box-shadow: 0 3vw 3vw 0 greenyellow;
+            }
+            h1{
+                color: white;
+                text-align: center;
+                position: relative;
+                top: 3vw;
+                font-family: Game;
+                font-size: 6vw;
+                user-select: none;
+                animation-name: greywhite;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+                animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            }
+            @keyframes greywhite{
+                0%{color: greenyellow; box-shadow: none;}
+                50%{color:white;}
+                100%{color:greenyellow;}
+            }
+        </style>
+
+    </body>
+</html>

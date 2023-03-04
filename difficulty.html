@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: white; text-align: center;">Choose Your Difficulty</h1>
+    <style>
+        html{
+            font-family: Game;
+            user-select: none;
+        }
+        @font-face {
+            font-family: Game;
+            src: url(font/gamefont.otf);
+        }
+        body{
+            background-color: black;
+        }
+        [difficulties]{
+            position: relative;
+            top: 6vw;       
+        }
+        [difficulties] div{
+            background-color: rgb(255, 255, 255); 
+            width: 13vw; 
+            height: 13vw; 
+            margin: auto; 
+            border-radius: 9vw; 
+            border-width: 0.3vw; 
+            border-color: darkgrey;
+            border-style: solid;
+            text-align: center;
+            transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+        }
+        [difficulties] div span{
+            text-align: center;
+        }
+        [difficulties] div:hover{
+            box-shadow: 0 1vw 1vw 0 greenyellow;
+            background-color: greenyellow;
+        }
+        [difficulties] div:hover span{
+            color: blueviolet;
+            font-weight: 900;
+        }
+    </style>
+    <div difficulties>
+        <div classic_d><br><br><span>Classic</span></div>
+        <div classic_d></div>
+        <div classic_d></div>
+    </div>
+</body>
+</html>

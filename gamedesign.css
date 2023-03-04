@@ -1,0 +1,62 @@
+[snake]{
+    background-color: black;
+    width: 2.3vw;
+    height: 2.3vw;
+    margin: -2.3vw;
+    position: relative;
+    border-radius: 9vw;
+    border-color: aliceblue;
+    border-width: 0.73vw;
+    border-style: double;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 2.3s;
+    box-shadow: 0 2vw 4.3vw 0 rgba(4, 20, 0, 0.767);
+    color: white;
+}
+
+body{
+    background-color: darkgreen;
+    overflow: hidden;
+}
+
+html{
+    cursor: none;
+}
+
+[obstacle]{
+    width: 5vw;
+    height: 5vw;
+    background-color: black;
+    /*animation-name: obstaclean;*/
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: fixed;
+    top:-400px;
+    animation-timing-function: linear;
+    border-radius: 3vw;
+    border-width: 1.3vw;
+    border-color:white;
+    border-style: ridge;
+    left:0px;
+    box-shadow: 0 3vw 9vw 0 black;
+    rotate: 3vw;
+}
+
+@keyframes obstaclean{
+    100% {top:3000px;}
+    0% {top:-100px;}
+}
+
+[scoredisplay]{
+    background-color: black;
+    width: 19.3vw;
+    height: 8.3vw;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-top-left-radius: 2.3vw;
+    font-size: 2.3vw;
+    color: white;
+    text-align: center;
+    vertical-align: 1.3vw;
+}
+
